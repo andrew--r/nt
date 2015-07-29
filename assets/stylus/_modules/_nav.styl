@@ -1,0 +1,20 @@
+.nav
+  display flex
+  align-items center
+  justify-content space-around
+
+.nav__item
+  color #383534
+  transition color .16s cubic-bezier(0.23, 1, 0.32, 1)
+  
+  &:hover, &--active
+    color #b72d1e
+
+// RESPONSIVE
+// mobiles
+@media screen  and (max-width 768px)
+  .nav
+    flex-direction column
+  
+  .nav__item
+    order 5

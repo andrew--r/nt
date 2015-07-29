@@ -1,0 +1,105 @@
+.static-event
+  background #fff
+  padding-bottom 12px
+  margin-bottom 2rem
+  
+  &__thumb
+    display block
+    max-height 310px
+    margin-bottom 30px
+    overflow hidden
+    
+    img
+      width 100%
+  
+  &__title
+    padding 0 30px
+    font-family 'LatoLight'
+    font-size 30px
+    margin-bottom 18px
+    
+    a
+      color #383534
+      
+      &:hover
+        color #cc9a5f
+  
+  &__description
+    padding 0 30px
+    line-height 1.875
+    margin-bottom 30px
+  
+  &__datarow
+    display flex
+    align-items center
+    padding 0 30px
+    margin-bottom 18px
+    
+    & > *
+      width 50%
+  
+  &__rating
+    text-align right
+    
+    .rating
+      display inline-block
+  
+  &__icons
+    font-size 0
+    .icon + .icon
+      margin-left 10px
+  
+  &__tags
+    padding 0 30px
+    margin-bottom 8px
+    
+    .tag
+      max-width 50%
+      text-overflow()
+  
+  &__organizer
+    font-size 13px
+  
+  &__date
+    text-align right
+    font-size 20px
+    color #668696
+    
+
+
+// RESPONSIVE
+// tablets
+@media screen and (max-width 992px)
+  .static-event
+    max-width 640px
+    margin-left auto
+    margin-right auto 
+
+
+// mobiles
+@media screen and (max-width 768px)
+  .static-event
+    max-width 640px
+
+@media screen and (max-width 480px)
+  .static-event
+    
+    &__title
+      font-size 24px
+    
+    &__description
+      line-height 1.4
+    
+    &__datarow
+      flex-direction column
+      
+      & > *
+        width 100%
+        text-align left
+        
+        &:first-child
+          margin-bottom 10px
+    
+    &__tags
+      .tag
+        max-width 100%

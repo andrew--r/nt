@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+
+  <meta name="description">
+  <meta name="keywords">
+  <meta name="copyright">
+
+  <title>Главная — Научный Туризм</title>
+
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="static/css/jquery-ui.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+
+<!-- header -->
+<header class="header container">
+  <!-- social -->
+  <ul class="header__social social">
+    <li class="social__item"><a class="social__link" href="#"><img src="static/images/vk.svg" alt=""></a></li>
+    <li class="social__item"><a class="social__link" href="#"><img src="static/images/tw.svg" alt=""></a></li>
+    <li class="social__item"><a class="social__link" href="#"><img src="static/images/fb.svg" alt=""></a></li>
+  </ul>
+  <!-- /social -->
+
+  <!-- navigation -->
+  <nav class="header__nav nav">
+    <a class="nav__item nav__item--active" href="#">Мероприятия</a>
+    <a class="nav__item" href="#">О проекте</a>
+
+    <a href="#"><img class="header__logo" src="static/images/logo.svg" alt="Научный туризм"></a>
+
+    <a class="nav__item" href="#">Новости</a>
+    <a class="nav__item" href="#">Связаться с нами</a>
+  </nav>
+  <!-- /navigation -->
+
+</header>
+<!-- /header -->
+
+
+<!-- найдите вашу экспедицию -->
+<div class="search">
+  <div class="container">
+    <div class="search__header">
+      <h2 class="search__title">Найдите вашу экспедицию</h2>
+      <p class="search__subtitle">Выберите параметры и мы найдём для вас приключение</p>
+    </div>
+
+    <form action="#" class="search__form searchform">
+      <!-- form selects -->
+      <div class="row searchform__selects">
+        <div class="col-md-4 col-sm-4">
+          <select class='searchform__select' name="type" id="type" required>
+            <option disabled selected>Выберите тип</option>
+            <option value="Тип 1">Название типа</option>
+            <option value="Тип 2">Ещё один тип</option>
+            <option value="Тип 3">Дополнительный тип</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <select class='searchform__select' name="theme" id="theme" required>
+            <option disabled selected>Тематика</option>
+            <option value="Тип 2">Ещё один тип</option>
+            <option value="Тип 3">Дополнительный тип</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <select class='searchform__select' name="country" id="country" required>
+            <option disabled selected>Страна</option>
+            <option value="Тип 2">Ещё один тип</option>
+            <option value="Тип 3">Дополнительный длинный тип</option>
+          </select>
+        </div>
+      </div>
+      <!-- /form selects -->
+
+      <!-- form other -->
+      <div class="row searchform__other">
+
+        <div class="col-md-4 col-sm-4 season">
+
+          <p class="season__label">Выберите время года:</p>
+
+          <div class="season__icon">
+            <input id="winter" name="winter" type="checkbox">
+            <label title="Зима" for="winter"></label>
+          </div>
+
+          <div class="season__icon">
+            <input id="spring" name="spring" type="checkbox">
+            <label title="Весна" for="spring"></label>
+          </div>
+
+          <div class="season__icon">
+            <input id="summer" name="summer" type="checkbox">
+            <label title="Лето" for="summer"></label>
+          </div>
+
+          <div class="season__icon">
+            <input id="autumn" name="autumn" type="checkbox">
+            <label title="Осень" for="autumn"></label>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-4 searchform__checkboxes">
+          <input class="checkbox" name="free-trip" id="free-trip" type="checkbox">
+          <label for="free-trip">бесплатное путешествие</label>
+        </div>
+
+        <div class="col-md-4 col-sm-4 searchform__checkboxes">
+          <input class="checkbox" name="special-skills" id="special-skills" type="checkbox">
+          <label for="special-skills">обязательны спецнавыки</label>
+        </div>
+      </div>
+      <!-- /form other -->
+
+      <div class="searchform__submit">
+        <input class="searchform__btn" type="submit" value="найти">
+      </div>
+    </form>
+  </div>
+</div>
+<!-- /найдите вашу экспедицию -->
+
+
+<!-- events list -->
+<div class="events-list">
+  <div class="container">
+    <h2 class="events-list__title">Всего 223 приключения</h2>
+
+    <!-- event -->
+    <div class="events-list__item event">
+      <a href="#"><div class="event__thumb" style="background-image: url(static/images/public/event1.png)"></div></a>
+      <!-- здесь на стороне сервера в url() надо подставлять путь к картинке -->
+
+      <div class="event__data">
+        <a class="event__link" href="#">
+          <div class="event__header">
+            <h3 class="event__title">Название мероприятия</h3>
+            <p class="event__organizer">организатор</p>
+          </div>
+
+          <p class="event__description">Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок). Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок).</p>
+        </a>
+
+        <div class="event__tags">
+          <span class="tag tag--orange">по следам великих путешественников</span>
+          <span class="tag tag--green">Археология</span>
+          <span class="tag tag--blue">загадки истории</span>
+        </div>
+
+        <div class="event__footer">
+
+          <div class="event__icons">
+            <img src="static/images/icon-season.png" height="23" width="24" alt="" class="event__icon">
+            <img src="static/images/icon-country.png" alt="" class="event__icon">
+            <img src="static/images/icon-rur.png" alt="" class="event__icon">
+          </div>
+
+          <div class="event__difficulty">
+            <p>для опытных</p>
+            <div class="event__rating" data-stars='3'></div>
+          </div>
+
+          <div class="event__date">
+            <p>дата начала/завершения</p>
+            <p>22.01 — 25.03</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /event -->
+
+    <!-- event -->
+    <div class="events-list__item event">
+      <a href="#"><div class="event__thumb" style="background-image: url(static/images/public/event2.png)"></div></a>
+      <!-- здесь на стороне сервера в url() надо подставлять путь к картинке -->
+
+      <div class="event__data">
+        <a class="event__link" href="#">
+          <div class="event__header">
+            <h3 class="event__title">Другое мероприятие</h3>
+            <p class="event__organizer">организатор</p>
+          </div>
+
+          <p class="event__description">Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок). Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок).</p>
+        </a>
+
+        <div class="event__tags">
+          <span class="tag tag--orange">новый свет</span>
+          <span class="tag tag--green">морское дело</span>
+        </div>
+
+        <div class="event__footer">
+
+          <div class="event__icons">
+            <img src="static/images/icon-season.png" height="23" width="24" alt="" class="event__icon">
+            <img src="static/images/icon-country.png" alt="" class="event__icon">
+            <img src="static/images/icon-rur.png" alt="" class="event__icon">
+          </div>
+
+          <div class="event__difficulty">
+            <p>для начинающих</p>
+            <div class="event__rating" data-stars='1'></div>
+          </div>
+
+          <div class="event__date">
+            <p>дата начала/завершения</p>
+            <p>31.01 — 19.02</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /event -->
+
+    <!-- event -->
+    <div class="events-list__item event">
+      <a href="#"><div class="event__thumb" style="background-image: url(static/images/public/event3.png)"></div></a>
+      <!-- здесь на стороне сервера в url() надо подставлять путь к картинке -->
+
+      <div class="event__data">
+        <a class="event__link" href="#">
+          <div class="event__header">
+            <h3 class="event__title">Ещё одно мероприятие</h3>
+            <p class="event__organizer">организатор</p>
+          </div>
+
+          <p class="event__description">Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок). Здесь будет описание мероприятия. Для каждого мерприятия будет также набор тегов/параметров (лучше всего отрисовать в виде иконок).</p>
+        </a>
+
+        <div class="event__tags">
+          <span class="tag tag--blue">загадки истории</span>
+        </div>
+
+        <div class="event__footer">
+
+          <div class="event__icons">
+            <img src="static/images/icon-season.png" height="23" width="24" alt="" class="event__icon">
+            <img src="static/images/icon-country.png" alt="" class="event__icon">
+            <img src="static/images/icon-rur.png" alt="" class="event__icon">
+          </div>
+
+          <div class="event__difficulty">
+            <p>для профессионалов</p>
+            <div class="event__rating" data-stars='5'></div>
+          </div>
+
+          <div class="event__date">
+            <p>дата начала/завершения</p>
+            <p>05.02 — 22.04</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /event -->
+
+    <!-- pagination -->
+    <ul class="events-list__pagination pagination">
+      <li><a class="pagination__item pagination__item--active" href="#">1</a></li>
+      <li><a class="pagination__item" href="#">2</a></li>
+      <li><a class="pagination__item" href="#">3</a></li>
+      <li><a class="pagination__item" href="#">4</a></li>
+      <li><a class="pagination__item" href="#">5</a></li>
+      <li class="pagination__item">…</li>
+      <li><a class="pagination__item" href="#">22</a></li>
+    </ul>
+    <!-- /pagination -->
+
+  </div>
+</div>
+<!-- /events list -->
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+
+      <!-- bottom nav -->
+      <nav class="footer__nav">
+        <a href="#">Мероприятия</a>
+        <a href="#">О проекте</a>
+        <a href="#">Новости</a>
+        <a href="#">Связаться с нами</a>
+      </nav>
+      <!-- /bottom nav -->
+
+      <!-- bottom social -->
+      <ul class="footer__social social social--inverse">
+        <li class="social__item"><a class="social__link" href="#"><img src="static/images/vk-inverse.png" alt=""></a></li>
+        <li class="social__item"><a class="social__link" href="#"><img src="static/images/tw-inverse.png" alt=""></a></li>
+        <li class="social__item"><a class="social__link" href="#"><img src="static/images/fb-inverse.png" alt=""></a></li>
+      </ul>
+      <!-- /bottom social -->
+
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- include scripts -->
+<script src="static/js/vendor/jquery-1.11.2.js"></script>
+<script src="static/js/vendor/jquery-ui.min.js"></script>
+<script src="static/js/main.js"></script>
+<!-- /include scripts -->
+</body>
+</html>

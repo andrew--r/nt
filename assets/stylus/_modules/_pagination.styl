@@ -1,0 +1,40 @@
+.pagination
+  clearlist()
+  text-align center
+  
+  li + li
+    margin-left 10px
+
+.pagination__item
+  display inline-block
+  width 40px
+  line-height 40px
+  text-align center
+  background #dcdcdc
+  color #383534
+  transition all .16s ease
+  border-radius 3px
+  
+  &--active
+    background #bc5a50
+    color #fff
+
+li.pagination__item
+  noselection()
+
+a.pagination__item:hover
+  background #bc5a50
+  color #fff
+
+// RESPONSIVE
+// mobiles
+@media screen and (max-width 768px)
+  .pagination
+    font-size 14px
+    
+    li + li
+      margin-left 5px
+  
+  .pagination__item
+    width 30px
+    line-height 30px

@@ -1,0 +1,57 @@
+.event-data
+  padding-top 25px
+  padding-bottom 25px
+  color #898989
+  
+  &__deadline
+    p:first-child
+      margin-bottom 14px
+    
+    p:last-child
+      display inline-block
+      vertical-align middle
+      font-size 26px
+      color #bc5a50
+      
+    .icon
+      display inline-block
+      vertical-align middle
+      margin-right 12px
+      sprite($icon_deadline)
+  
+  &__contact
+    p:first-child
+      margin-bottom 14px
+    
+    p:last-child
+      display inline-block
+      vertical-align middle
+      font-size 26px
+      color #a6b68e
+    
+    .icon
+      display inline-block
+      vertical-align middle
+      margin-right 12px
+      sprite($icon_contact)
+  
+  &__source
+    p:first-child
+      margin-bottom 14px
+    
+    .icon
+      display inline-block
+      sprite($icon_link)
+      
+      &:hover
+        sprite($icon_link_hover)
+
+
+// RESPONSIVE
+// mobiles
+@media screen  and (max-width 768px)
+  .event-data
+    text-align center
+    
+    &__contact, &__source
+      margin-top 2rem

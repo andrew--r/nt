@@ -1,0 +1,94 @@
+.event-card
+  display flex
+  width 620px
+  margin-left auto
+  margin-right auto
+  padding 35px
+  
+  background #fff
+  
+  &__main
+    width 60%
+    
+    p + p
+      margin-top 10px
+    
+    .tag, .icon
+      display inline-block
+      margin-left 5px
+    
+    .icon
+      vertical-align middle
+  
+  &__sidebar
+    width 40%
+  
+  &__date
+    font-size 13px
+    
+    p:first-child
+      margin 4px 0
+    
+    p:last-child
+      display inline-block
+      vertical-align middle
+      font-size 26px
+      
+      color #668696
+    .icon
+      margin-left 0
+      margin-right 5px
+      vertical-align middle
+  
+  &__difficulty
+    margin-top 26px
+    line-height 1
+    font-size 13px
+
+  &__rating
+    margin-top 10px
+    
+    &[data-stars='1']
+      sprite($icon_star1)
+    &[data-stars='2']
+      sprite($icon_star2)
+    &[data-stars='3']
+      sprite($icon_star3)
+    &[data-stars='4']
+      sprite($icon_star4)
+    &[data-stars='5']
+      sprite($icon_star5)
+  
+  &__amount
+    margin-top 26px
+    font-size 13px
+    
+    p:last-child
+      font-size 18px
+      color #a6b68e
+      
+      span
+        font-size 26px
+
+// RESPONSIVE
+// mobiles
+@media screen and (max-width 768px)
+  .event-card
+    max-width 480px
+    width 90%
+    flex-direction column
+    text-align center
+    
+    &__main
+      width 100%
+      
+      p + p
+        margin-top 1.5rem
+    
+    &__sidebar
+      width 100%
+      margin-top 1.5em
+
+@media screen and (max-width 400px)
+  .event-card
+    width 96%

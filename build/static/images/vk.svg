@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33px"
+	 height="33px" viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+<g id="ellipse_1_" enable-background="new    ">
+	<g id="ellipse">
+		<g>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#383534" cx="16.5" cy="16.5" r="16.5"/>
+		</g>
+	</g>
+</g>
+<g id="Shape_F_x5F_3_copy_3_2_" enable-background="new    ">
+	<defs>
+		<path id="SVGID_1_" enable-background="new    " d="M23.097,19.257c-1.497-1.396-1.296-1.171,0.507-3.587
+			c1.098-1.473,1.537-2.37,1.399-2.755c-0.131-0.367-0.933-0.304-0.933-0.304l-2.693-0.001c0,0-0.199-0.02-0.347,0.069
+			c-0.145,0.087-0.237,0.313-0.237,0.313s-0.426,1.16-0.992,2.128c-1.197,2.044-1.676,2.152-1.871,2.025
+			c-0.455-0.296-0.342-1.188-0.342-1.822c0-1.98,0.299-2.807-0.581-3.021c-0.292-0.07-0.507-0.117-1.254-0.125
+			c-0.959-0.01-1.771,0.003-2.23,0.229c-0.306,0.15-0.542,0.486-0.398,0.505c0.178,0.024,0.58,0.109,0.793,0.401
+			c0.275,0.377,0.266,1.224,0.266,1.224s0.158,2.331-0.37,2.62c-0.362,0.198-0.859-0.207-1.926-2.061
+			c-0.546-0.95-0.959-2.02-0.959-2.02s-0.079-0.196-0.221-0.301c-0.172-0.128-0.413-0.168-0.413-0.168L7.74,12.609
+			c0,0-0.383,0.011-0.524,0.179c-0.125,0.148-0.01,0.457-0.01,0.457s2,4.74,4.263,7.11c2.076,2.174,4.433,2.048,4.433,2.048h1.068
+			c0,0,0.322-0.036,0.488-0.215c0.15-0.164,0.146-0.472,0.146-0.472s-0.021-1.458,0.645-1.67c0.655-0.209,1.498,1.394,2.391,2.01
+			c0.674,0.466,1.188,0.346,1.188,0.346l2.387,0.002c0,0,1.248-0.095,0.656-1.082C24.822,21.241,24.526,20.592,23.097,19.257z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<image overflow="visible" clip-path="url(#SVGID_2_)" width="33" height="33" id="Shape_F_x5F_3_copy_3_xA0_Изображение" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAIAAADYhlU4AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACtJREFUeNrszTERAAAIBCC1f+f3
+DOEGBegk9Wzqn8PhcDgcDofD4XCcFWAAN/oDP08Vh+gAAAAASUVORK5CYII=">
+	</image>
+</g>
+</svg>

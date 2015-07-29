@@ -1,0 +1,59 @@
+.season__label
+  margin-bottom 1rem
+
+.season__icon
+  display inline-block
+  width 43px
+  height 43px
+  max-width 43px
+  max-height 43px
+  font-size 0
+  
+  & + .season__icon
+    margin-left 10px
+
+  input
+    display none
+  
+  label
+    max-width 43px
+    max-height 43px
+    display block
+    opacity .4
+    transition opacity .16s cubic-bezier(0.23, 1, 0.32, 1)
+    &:hover
+      opacity 1
+    
+  label[for='winter']
+    sprite($icon_winter)
+  
+  label[for='spring']
+    sprite($icon_spring)
+  
+  label[for='summer']
+    sprite($icon_summer)
+  
+  label[for='autumn']
+    sprite($icon_autumn)
+  
+  input[name='winter']:checked + label[for='winter']
+    sprite($icon_winter_hover)
+    opacity 1
+  
+  input[name='spring']:checked + label[for='spring']
+    sprite($icon_spring_hover)
+    opacity 1
+  
+  input[name='summer']:checked + label[for='summer']
+    sprite($icon_summer_hover)
+    opacity 1
+  
+  input[name='autumn']:checked + label[for='autumn']
+    sprite($icon_autumn_hover)
+    opacity 1
+
+// RESPONSIVE
+// mobiles
+@media screen and (max-width 768px)
+  .season
+    text-align center

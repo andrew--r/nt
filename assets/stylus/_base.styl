@@ -1,0 +1,83 @@
+html, body
+  font-family $bff
+  font-size $bfs
+  line-height $blh
+    
+  color $btc
+
+
+h1, h2, h3, h4, h5, h6
+  font-family $bhff
+
+
+h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol
+  margin 0
+  padding 0
+
+
+a
+  text-decoration none
+  color #cc9a5f
+  transition all .16s cubic-bezier(0.23, 1, 0.32, 1)
+
+input[type="checkbox"].checkbox
+  display none
+
+input[type="checkbox"].checkbox + label
+  position relative
+  padding-left 40px
+  
+  &:before
+    content ''
+    position absolute
+    top -6px
+    left 0
+    display block
+    sprite($icon_checkbox)
+    width 1.75rem
+    height 1.75rem
+
+input[type="checkbox"].checkbox:checked + label
+  &:before
+    sprite($icon_checkbox_checked)
+
+.tag
+  display inline-block
+  vertical-align baseline
+  padding 0 12px
+  margin-bottom .25rem
+  
+  font-size 13px
+  line-height 22px
+  
+  border-radius 9px
+  color #fff
+  
+  &--orange
+    background #cc9a5f
+  &--green
+    background #a6b68e
+  &--blue
+    background #668696
+
+.btn
+  display inline-block
+  
+  background #bc5a50
+  border-radius 22px
+  color #fff
+  
+  &:hover
+    background #668696
+
+.rating
+  &[data-stars='1']
+    sprite($icon_star1)
+  &[data-stars='2']
+    sprite($icon_star2)
+  &[data-stars='3']
+    sprite($icon_star3)
+  &[data-stars='4']
+    sprite($icon_star4)
+  &[data-stars='5']
+    sprite($icon_star5)

@@ -1,0 +1,33 @@
+.static-header
+  min-height 290px
+  padding-top 60px
+  padding-bottom 160px
+  
+  color #fff
+  background url('../images/event-bg.jpg') center no-repeat
+  background-size cover
+  
+  text-align center
+
+  &__title
+    font-family 'LatoLight'
+    font-size 36px
+    margin-bottom 18px
+  
+  &__subtitle
+    font-size 18px
+
+// RESPONSIVE
+// tablets
+@media screen and (min-width 768px) and (max-width 970px)
+  .static-header
+    min-height 250px
+    padding-top 40px
+    padding-bottom 120px
+
+// mobiles
+@media screen  and (max-width 768px)
+  .static-header
+    min-height 200px
+    padding-top 30px
+    padding-bottom 60px

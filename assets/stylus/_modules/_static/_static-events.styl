@@ -1,0 +1,32 @@
+.static-events
+  padding-top 80px
+  background #ededed
+  
+  &__title
+    font-family 'LatoLight'
+    font-size 36px
+    text-align center
+    margin-bottom 20px
+  
+  &__btn
+    margin-top 40px
+    margin-bottom 60px
+    font-size 18px
+    line-height 50px
+    text-align center
+    
+    .btn
+      text-align center
+      width 30%
+
+// RESPONSIVE
+// mobiles
+@media screen  and (max-width 640px)
+  .static-events
+    &__btn
+      .btn
+        width 90%
+    
+    .container
+      .col-md-4
+        padding 0
